@@ -13,6 +13,11 @@ Reference: https://fly.io
 
 `python3`
 
+**To reload REPL when you make changes in file:**
+`from importlib import reload`
+`reload(path_to_file)`
+
+
 **Python Docs**
 
 https://docs.python.org

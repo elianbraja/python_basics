@@ -1,10 +1,9 @@
 from flask import Flask
 from datetime import datetime
+from python_web_browser.day import dayname
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    DAYNAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    dayname = DAYNAMES[datetime.now().weekday()]
-    return f"<p>hello, world! Happy {dayname}</p>"
+    return f"<p>hello, world! Happy {dayname(datetime.now())}</p>"
