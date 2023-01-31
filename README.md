@@ -1,13 +1,21 @@
-1. Gjithmone pare se te besh run applikacionin ekzekuto:
-. venv/bin/activate
+**Venv activation:**
+`. venv/bin/activate`
+If you change folder location, be aware to change references inside venv folder.
 
-2. Starto serverin:
-flask --app hello_app run --host=0.0.0.0 --port=3000
+**Deployment:**
+Reference: https://fly.io
 
-3. Kujdes! Nese ndryshon path e projektit do te ndryshojne dhe te dhenat qe jane tek folderi venv pasi perndryshe nuk gjen dot paketat e instaluara tek ai venv. Duhen ndryshuar dhe aty.
+`fly deploy` (to deploy new changes to fly.io)
 
-Per te bere deploy ne fly.io:
-fly deploy
+`fly launch` (for recreating Dockerfile and fly.toml)
 
-Per te bere launch deployment nga e para:
-fly launch
+**Python REPL (Console)**
+
+`python3`
+
+**Python Docs**
+
+https://docs.python.org
+
+
+
