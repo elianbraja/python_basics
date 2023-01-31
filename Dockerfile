@@ -17,7 +17,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-
 EXPOSE 8080
 
 # replace APP_NAME with module name
